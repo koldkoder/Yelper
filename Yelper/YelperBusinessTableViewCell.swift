@@ -20,12 +20,12 @@ class YelperBusinessTableViewCell: UITableViewCell {
     
     var business: YelperRepo! {
         didSet {
-            businessNameLabel.text = business.name!
-            businessAddressLabel.text = business.address!
+            businessNameLabel.text = business.name
+            businessAddressLabel.text = business.address
             businessCategoryLabel.text = business.categories?.joinWithSeparator(",")
-            reviewsCountLabel.text = "\(business.reviewsCount!) Reviews"
-            businessImageView.setImageWithURL(business.imageUrl!)
-            ratingsImageView.setImageWithURL(business.ratingImageUrl!)
+            reviewsCountLabel.text = "\(business.reviewsCount) Reviews"
+            businessImageView.setImageWithURL(business.imageUrl)
+            ratingsImageView.setImageWithURL(business.ratingImageUrl)
         }
     }
     override func awakeFromNib() {
