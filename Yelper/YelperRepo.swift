@@ -39,9 +39,11 @@ class YelperRepo {
         
         
         if let location = jsonResult["location"] as? NSDictionary {
-            if let adresses = location["address"] as? [NSString] {
-                if let address = adresses[0] as? String {
-                    self.address = address
+            if let addresses = location["address"] as? [NSString] {
+                if(addresses.count > 0) {
+                    if let address = addresses[0] as? String {
+                        self.address = address
+                    }
                 }
             }
         }

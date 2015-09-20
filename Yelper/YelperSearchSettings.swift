@@ -18,6 +18,6 @@ class YelpSearchSettings {
     var limit = 20
     
     init() {
-        searchString = "food"
+        searchString = ""
     }
 }
