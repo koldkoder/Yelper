@@ -16,54 +16,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-qA-8Vm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-qA-8Vm">
                                 <rect key="frame" x="0.0" y="65" width="320" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="82" id="Bgb-PI-7on" customClass="YelperBusinessTableViewCell" customModule="Yelper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="159" id="Bgb-PI-7on" customClass="YelperBusinessTableViewCell" customModule="Yelper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgb-PI-7on" id="BUX-Er-mQx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="158.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Codmother Fish and Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-J3-BXN">
-                                                    <rect key="frame" x="95" y="-3" width="238" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="The Codmother Fish" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-J3-BXN">
+                                                    <rect key="frame" x="81" y="8" width="190.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULE-tg-fyc">
-                                                    <rect key="frame" x="302" y="2" width="16" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULE-tg-fyc">
+                                                    <rect key="frame" x="296" y="12" width="15.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COU-9u-jz3">
-                                                    <rect key="frame" x="95" y="20" width="93" height="20"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COU-9u-jz3">
+                                                    <rect key="frame" x="81" y="29" width="83" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="VtC-0R-65s"/>
+                                                        <constraint firstAttribute="height" constant="15" id="rxp-Dl-pNP"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="British, Fish &amp; Chips, Seafood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erv-VX-89c">
-                                                    <rect key="frame" x="95" y="57" width="226" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2824 Jones St, North Beach/Telegraph Hill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kS9-K4-XbX">
-                                                    <rect key="frame" x="95" y="45" width="258" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2824 Jones St, North Beach/Telegraph Hill" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kS9-K4-XbX">
+                                                    <rect key="frame" x="81" y="48" width="231" height="29"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1367 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbQ-aF-VRh">
-                                                    <rect key="frame" x="191" y="26" width="66" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1367 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbQ-aF-VRh">
+                                                    <rect key="frame" x="169" y="30" width="70" height="12"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVV-fi-qQQ">
-                                                    <rect key="frame" x="8" y="0.0" width="79" height="73.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sVV-fi-qQQ">
+                                                    <rect key="frame" x="8" y="8" width="65" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="65" id="QKk-fd-yYs"/>
+                                                        <constraint firstAttribute="width" constant="65" id="t3K-ba-yAn"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT3-yh-NQA">
+                                                    <rect key="frame" x="296" y="30" width="15.5" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="British, Fish &amp; Chips, Seafood" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erv-VX-89c">
+                                                    <rect key="frame" x="81" y="79" width="231" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="lT3-yh-NQA" secondAttribute="trailing" constant="8" id="1YN-dk-XQP"/>
+                                                <constraint firstItem="erv-VX-89c" firstAttribute="leading" secondItem="kS9-K4-XbX" secondAttribute="leading" id="3dv-Tu-acH"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="erv-VX-89c" secondAttribute="bottom" constant="12" id="4pB-p9-BNQ"/>
+                                                <constraint firstItem="erv-VX-89c" firstAttribute="leading" secondItem="sVV-fi-qQQ" secondAttribute="trailing" constant="8" id="5vk-zo-sM5"/>
+                                                <constraint firstAttribute="trailing" secondItem="kS9-K4-XbX" secondAttribute="trailing" constant="8" id="73d-46-hrg"/>
+                                                <constraint firstItem="COU-9u-jz3" firstAttribute="leading" secondItem="sVV-fi-qQQ" secondAttribute="trailing" constant="8" id="7tM-nR-xju"/>
+                                                <constraint firstItem="sVV-fi-qQQ" firstAttribute="leading" secondItem="BUX-Er-mQx" secondAttribute="leading" constant="8" id="8Wk-iw-3F5"/>
+                                                <constraint firstItem="kS9-K4-XbX" firstAttribute="leading" secondItem="sVV-fi-qQQ" secondAttribute="trailing" constant="8" id="DHp-O3-qd9"/>
+                                                <constraint firstItem="ULE-tg-fyc" firstAttribute="leading" secondItem="6FO-J3-BXN" secondAttribute="trailing" constant="25" id="G1Q-Hw-arO"/>
+                                                <constraint firstAttribute="trailing" secondItem="gbQ-aF-VRh" secondAttribute="trailing" constant="8" id="K4S-ae-mqO"/>
+                                                <constraint firstItem="kS9-K4-XbX" firstAttribute="top" secondItem="COU-9u-jz3" secondAttribute="bottom" constant="4" id="MNs-9Q-PIY"/>
+                                                <constraint firstAttribute="trailing" secondItem="ULE-tg-fyc" secondAttribute="trailing" constant="8" id="RHi-p6-8VY"/>
+                                                <constraint firstItem="COU-9u-jz3" firstAttribute="top" secondItem="6FO-J3-BXN" secondAttribute="bottom" constant="4" id="Rdh-gQ-f3N"/>
+                                                <constraint firstItem="sVV-fi-qQQ" firstAttribute="top" secondItem="BUX-Er-mQx" secondAttribute="top" constant="8" id="TSn-8i-giZ"/>
+                                                <constraint firstItem="6FO-J3-BXN" firstAttribute="top" secondItem="BUX-Er-mQx" secondAttribute="top" constant="8" id="XCS-bE-YEm"/>
+                                                <constraint firstItem="gbQ-aF-VRh" firstAttribute="leading" secondItem="COU-9u-jz3" secondAttribute="trailing" constant="5" id="XUf-f5-HK0"/>
+                                                <constraint firstItem="erv-VX-89c" firstAttribute="top" secondItem="kS9-K4-XbX" secondAttribute="bottom" constant="2" id="aK7-PM-B57"/>
+                                                <constraint firstAttribute="trailing" secondItem="erv-VX-89c" secondAttribute="trailing" constant="8" id="bCD-CH-lXz"/>
+                                                <constraint firstItem="gbQ-aF-VRh" firstAttribute="centerY" secondItem="COU-9u-jz3" secondAttribute="centerY" id="dCj-vy-ePt"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sVV-fi-qQQ" secondAttribute="bottom" constant="12" id="e7p-5F-uge"/>
+                                                <constraint firstItem="6FO-J3-BXN" firstAttribute="leading" secondItem="sVV-fi-qQQ" secondAttribute="trailing" constant="8" id="mnx-p1-wpp"/>
+                                                <constraint firstItem="lT3-yh-NQA" firstAttribute="top" secondItem="ULE-tg-fyc" secondAttribute="bottom" constant="4" id="pBO-Qh-57C"/>
+                                                <constraint firstItem="ULE-tg-fyc" firstAttribute="top" secondItem="BUX-Er-mQx" secondAttribute="top" constant="12" id="sug-re-lDd"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="businessAddressLabel" destination="kS9-K4-XbX" id="xlt-5X-6Bw"/>
