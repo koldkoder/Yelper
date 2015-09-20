@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2130E0BF1BAE1D470001290D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0BE1BAE1D470001290D /* AppDelegate.swift */; };
+		2130E0C41BAE1D470001290D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2130E0C21BAE1D470001290D /* Main.storyboard */; };
+		2130E0C61BAE1D470001290D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2130E0C51BAE1D470001290D /* Assets.xcassets */; };
+		2130E0C91BAE1D470001290D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2130E0C71BAE1D470001290D /* LaunchScreen.storyboard */; };
+		2130E0D41BAE1D470001290D /* YelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0D31BAE1D470001290D /* YelperTests.swift */; };
+		2130E0DF1BAE1D480001290D /* YelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0DE1BAE1D480001290D /* YelperUITests.swift */; };
+		2130E0EF1BAE1E1C0001290D /* YelperSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0EE1BAE1E1C0001290D /* YelperSearchViewController.swift */; };
+		2130E0F11BAE1E690001290D /* YelperRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0F01BAE1E690001290D /* YelperRepo.swift */; };
+		2130E0F31BAE1E990001290D /* YelperSearchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0F21BAE1E990001290D /* YelperSearchSettings.swift */; };
+		2130E0F91BAE897B0001290D /* YelperClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0F81BAE897B0001290D /* YelperClient.swift */; };
+		2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */; };
+		DEF503F9F2C03068E679C9BE /* libPods-Yelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160A2F16AFE47705E5EA3D3 /* libPods-Yelper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2130E0D01BAE1D470001290D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2130E0B31BAE1D470001290D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2130E0BA1BAE1D470001290D;
+			remoteInfo = Yelper;
+		};
+		2130E0DB1BAE1D470001290D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2130E0B31BAE1D470001290D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2130E0BA1BAE1D470001290D;
+			remoteInfo = Yelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1160A2F16AFE47705E5EA3D3 /* libPods-Yelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2130E0BB1BAE1D470001290D /* Yelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2130E0BE1BAE1D470001290D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2130E0C31BAE1D470001290D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2130E0C51BAE1D470001290D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2130E0C81BAE1D470001290D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2130E0CA1BAE1D470001290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2130E0CF1BAE1D470001290D /* YelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2130E0D31BAE1D470001290D /* YelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelperTests.swift; sourceTree = "<group>"; };
+		2130E0D51BAE1D470001290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2130E0DA1BAE1D470001290D /* YelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2130E0DE1BAE1D480001290D /* YelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelperUITests.swift; sourceTree = "<group>"; };
+		2130E0E01BAE1D480001290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2130E0EE1BAE1E1C0001290D /* YelperSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperSearchViewController.swift; sourceTree = "<group>"; };
+		2130E0F01BAE1E690001290D /* YelperRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperRepo.swift; sourceTree = "<group>"; };
+		2130E0F21BAE1E990001290D /* YelperSearchSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperSearchSettings.swift; sourceTree = "<group>"; };
+		2130E0F71BAE2AD00001290D /* Yelper-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yelper-Bridging-Header.h"; sourceTree = "<group>"; };
+		2130E0F81BAE897B0001290D /* YelperClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperClient.swift; sourceTree = "<group>"; };
+		2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperBusinessTableViewCell.swift; sourceTree = "<group>"; };
+		224CE45B7C0F3D5445941EC4 /* Pods-Yelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.release.xcconfig"; sourceTree = "<group>"; };
+		911931D0BD2F4B3B8E59A548 /* Pods-Yelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2130E0B81BAE1D470001290D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF503F9F2C03068E679C9BE /* libPods-Yelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0CC1BAE1D470001290D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0D71BAE1D470001290D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038BD505FBEE6B7AC2B519F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1160A2F16AFE47705E5EA3D3 /* libPods-Yelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2130E0B21BAE1D470001290D = {
+			isa = PBXGroup;
+			children = (
+				2130E0BD1BAE1D470001290D /* Yelper */,
+				2130E0D21BAE1D470001290D /* YelperTests */,
+				2130E0DD1BAE1D470001290D /* YelperUITests */,
+				2130E0BC1BAE1D470001290D /* Products */,
+				E8E00CBCFAF685B8F9D19B5C /* Pods */,
+				038BD505FBEE6B7AC2B519F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2130E0BC1BAE1D470001290D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0BB1BAE1D470001290D /* Yelper.app */,
+				2130E0CF1BAE1D470001290D /* YelperTests.xctest */,
+				2130E0DA1BAE1D470001290D /* YelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2130E0BD1BAE1D470001290D /* Yelper */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0ED1BAE1E040001290D /* ViewControllers */,
+				2130E0EC1BAE1DFC0001290D /* Views */,
+				2130E0BE1BAE1D470001290D /* AppDelegate.swift */,
+				2130E0C21BAE1D470001290D /* Main.storyboard */,
+				2130E0C51BAE1D470001290D /* Assets.xcassets */,
+				2130E0C71BAE1D470001290D /* LaunchScreen.storyboard */,
+				2130E0CA1BAE1D470001290D /* Info.plist */,
+				2130E0F01BAE1E690001290D /* YelperRepo.swift */,
+				2130E0F21BAE1E990001290D /* YelperSearchSettings.swift */,
+				2130E0F71BAE2AD00001290D /* Yelper-Bridging-Header.h */,
+				2130E0F81BAE897B0001290D /* YelperClient.swift */,
+			);
+			path = Yelper;
+			sourceTree = "<group>";
+		};
+		2130E0D21BAE1D470001290D /* YelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0D31BAE1D470001290D /* YelperTests.swift */,
+				2130E0D51BAE1D470001290D /* Info.plist */,
+			);
+			path = YelperTests;
+			sourceTree = "<group>";
+		};
+		2130E0DD1BAE1D470001290D /* YelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0DE1BAE1D480001290D /* YelperUITests.swift */,
+				2130E0E01BAE1D480001290D /* Info.plist */,
+			);
+			path = YelperUITests;
+			sourceTree = "<group>";
+		};
+		2130E0EC1BAE1DFC0001290D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2130E0ED1BAE1E040001290D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2130E0EE1BAE1E1C0001290D /* YelperSearchViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8E00CBCFAF685B8F9D19B5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				911931D0BD2F4B3B8E59A548 /* Pods-Yelper.debug.xcconfig */,
+				224CE45B7C0F3D5445941EC4 /* Pods-Yelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2130E0BA1BAE1D470001290D /* Yelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2130E0E31BAE1D480001290D /* Build configuration list for PBXNativeTarget "Yelper" */;
+			buildPhases = (
+				B824AD73B4335DC6E1D81160 /* Check Pods Manifest.lock */,
+				2130E0B71BAE1D470001290D /* Sources */,
+				2130E0B81BAE1D470001290D /* Frameworks */,
+				2130E0B91BAE1D470001290D /* Resources */,
+				A25D879C493762367F030A76 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yelper;
+			productName = Yelper;
+			productReference = 2130E0BB1BAE1D470001290D /* Yelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2130E0CE1BAE1D470001290D /* YelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2130E0E61BAE1D480001290D /* Build configuration list for PBXNativeTarget "YelperTests" */;
+			buildPhases = (
+				2130E0CB1BAE1D470001290D /* Sources */,
+				2130E0CC1BAE1D470001290D /* Frameworks */,
+				2130E0CD1BAE1D470001290D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2130E0D11BAE1D470001290D /* PBXTargetDependency */,
+			);
+			name = YelperTests;
+			productName = YelperTests;
+			productReference = 2130E0CF1BAE1D470001290D /* YelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2130E0D91BAE1D470001290D /* YelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2130E0E91BAE1D480001290D /* Build configuration list for PBXNativeTarget "YelperUITests" */;
+			buildPhases = (
+				2130E0D61BAE1D470001290D /* Sources */,
+				2130E0D71BAE1D470001290D /* Frameworks */,
+				2130E0D81BAE1D470001290D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2130E0DC1BAE1D470001290D /* PBXTargetDependency */,
+			);
+			name = YelperUITests;
+			productName = YelperUITests;
+			productReference = 2130E0DA1BAE1D470001290D /* YelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2130E0B31BAE1D470001290D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kushal Bhatt";
+				TargetAttributes = {
+					2130E0BA1BAE1D470001290D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 763LWA2EJC;
+					};
+					2130E0CE1BAE1D470001290D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 763LWA2EJC;
+						TestTargetID = 2130E0BA1BAE1D470001290D;
+					};
+					2130E0D91BAE1D470001290D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 763LWA2EJC;
+						TestTargetID = 2130E0BA1BAE1D470001290D;
+					};
+				};
+			};
+			buildConfigurationList = 2130E0B61BAE1D470001290D /* Build configuration list for PBXProject "Yelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2130E0B21BAE1D470001290D;
+			productRefGroup = 2130E0BC1BAE1D470001290D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2130E0BA1BAE1D470001290D /* Yelper */,
+				2130E0CE1BAE1D470001290D /* YelperTests */,
+				2130E0D91BAE1D470001290D /* YelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2130E0B91BAE1D470001290D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2130E0C91BAE1D470001290D /* LaunchScreen.storyboard in Resources */,
+				2130E0C61BAE1D470001290D /* Assets.xcassets in Resources */,
+				2130E0C41BAE1D470001290D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0CD1BAE1D470001290D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0D81BAE1D470001290D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A25D879C493762367F030A76 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yelper/Pods-Yelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B824AD73B4335DC6E1D81160 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2130E0B71BAE1D470001290D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2130E0EF1BAE1E1C0001290D /* YelperSearchViewController.swift in Sources */,
+				2130E0F31BAE1E990001290D /* YelperSearchSettings.swift in Sources */,
+				2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */,
+				2130E0BF1BAE1D470001290D /* AppDelegate.swift in Sources */,
+				2130E0F11BAE1E690001290D /* YelperRepo.swift in Sources */,
+				2130E0F91BAE897B0001290D /* YelperClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0CB1BAE1D470001290D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2130E0D41BAE1D470001290D /* YelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2130E0D61BAE1D470001290D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2130E0DF1BAE1D480001290D /* YelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2130E0D11BAE1D470001290D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2130E0BA1BAE1D470001290D /* Yelper */;
+			targetProxy = 2130E0D01BAE1D470001290D /* PBXContainerItemProxy */;
+		};
+		2130E0DC1BAE1D470001290D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2130E0BA1BAE1D470001290D /* Yelper */;
+			targetProxy = 2130E0DB1BAE1D470001290D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2130E0C21BAE1D470001290D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2130E0C31BAE1D470001290D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2130E0C71BAE1D470001290D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2130E0C81BAE1D470001290D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2130E0E11BAE1D480001290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2130E0E21BAE1D480001290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2130E0E41BAE1D480001290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 911931D0BD2F4B3B8E59A548 /* Pods-Yelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.Yelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yelper/Yelper-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		2130E0E51BAE1D480001290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 224CE45B7C0F3D5445941EC4 /* Pods-Yelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.Yelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yelper/Yelper-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2130E0E71BAE1D480001290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.YelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yelper.app/Yelper";
+			};
+			name = Debug;
+		};
+		2130E0E81BAE1D480001290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.YelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yelper.app/Yelper";
+			};
+			name = Release;
+		};
+		2130E0EA1BAE1D480001290D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.YelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yelper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2130E0EB1BAE1D480001290D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KB.YelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yelper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2130E0B61BAE1D470001290D /* Build configuration list for PBXProject "Yelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2130E0E11BAE1D480001290D /* Debug */,
+				2130E0E21BAE1D480001290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2130E0E31BAE1D480001290D /* Build configuration list for PBXNativeTarget "Yelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2130E0E41BAE1D480001290D /* Debug */,
+				2130E0E51BAE1D480001290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2130E0E61BAE1D480001290D /* Build configuration list for PBXNativeTarget "YelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2130E0E71BAE1D480001290D /* Debug */,
+				2130E0E81BAE1D480001290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2130E0E91BAE1D480001290D /* Build configuration list for PBXNativeTarget "YelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2130E0EA1BAE1D480001290D /* Debug */,
+				2130E0EB1BAE1D480001290D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2130E0B31BAE1D470001290D /* Project object */;
+}
