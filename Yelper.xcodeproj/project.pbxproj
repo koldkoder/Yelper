@@ -18,6 +18,8 @@
 		2130E0F31BAE1E990001290D /* YelperSearchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0F21BAE1E990001290D /* YelperSearchSettings.swift */; };
 		2130E0F91BAE897B0001290D /* YelperClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0F81BAE897B0001290D /* YelperClient.swift */; };
 		2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */; };
+		2130E0FD1BAF9E230001290D /* YelperSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */; };
+		21F5942A1BAFACF800ED9096 /* YelperFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F594291BAFACF800ED9096 /* YelperFilterViewController.swift */; };
 		DEF503F9F2C03068E679C9BE /* libPods-Yelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160A2F16AFE47705E5EA3D3 /* libPods-Yelper.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		2130E0F71BAE2AD00001290D /* Yelper-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		2130E0F81BAE897B0001290D /* YelperClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperClient.swift; sourceTree = "<group>"; };
 		2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperBusinessTableViewCell.swift; sourceTree = "<group>"; };
+		2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperSwitchCell.swift; sourceTree = "<group>"; };
+		21F594291BAFACF800ED9096 /* YelperFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperFilterViewController.swift; sourceTree = "<group>"; };
 		224CE45B7C0F3D5445941EC4 /* Pods-Yelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.release.xcconfig"; sourceTree = "<group>"; };
 		911931D0BD2F4B3B8E59A548 /* Pods-Yelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */,
+				2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				2130E0EE1BAE1E1C0001290D /* YelperSearchViewController.swift */,
+				21F594291BAFACF800ED9096 /* YelperFilterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -350,6 +356,8 @@
 			files = (
 				2130E0EF1BAE1E1C0001290D /* YelperSearchViewController.swift in Sources */,
 				2130E0F31BAE1E990001290D /* YelperSearchSettings.swift in Sources */,
+				21F5942A1BAFACF800ED9096 /* YelperFilterViewController.swift in Sources */,
+				2130E0FD1BAF9E230001290D /* YelperSwitchCell.swift in Sources */,
 				2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */,
 				2130E0BF1BAE1D470001290D /* AppDelegate.swift in Sources */,
 				2130E0F11BAE1E690001290D /* YelperRepo.swift in Sources */,

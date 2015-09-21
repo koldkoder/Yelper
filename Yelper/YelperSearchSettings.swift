@@ -12,12 +12,13 @@ import Foundation
 
 class YelpSearchSettings {
     var searchString: String?
+    var categories: String?
     var minReviews = 0
     var location = "San Jose"
     var offset = 0
     var limit = 20
     
     init() {
-        searchString = ""
+        searchString = "All"
     }
 }

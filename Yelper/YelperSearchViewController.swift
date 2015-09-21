@@ -9,7 +9,7 @@
 import UIKit
 import AFNetworking
 
-class YelperSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class YelperSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, YelperFilterViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var searchSettings = YelpSearchSettings()
@@ -54,7 +54,7 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
         
         navigationItem.leftBarButtonItem = filterButton
         
-        doSearch("indian")
+        doSearch(nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,17 +91,25 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func filter() {
-        doSearch(searchBar.text)
+        performSegueWithIdentifier("filterSegue", sender: nil)
+        //doSearch(searchBar.text)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        let navigationController = segue.destinationViewController as! UINavigationController
+        let yelperFitlerViewController = navigationController.topViewController as! YelperFilterViewController
+        yelperFitlerViewController.delegate = self
     }
-    */
+    
+    func filterViewController(filterViewController: YelperFilterViewController, didUpdateFilters filters: [String : AnyObject]) {
+     
+        let categories = filters["categories"] as? [String]
+        let category_filter =  categories?.joinWithSeparator(",")
+        searchSettings.categories = category_filter
+        doSearch(nil)
+        tableView.reloadData()
+    }
+
 
 }
