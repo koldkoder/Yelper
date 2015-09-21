@@ -61,6 +61,9 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         }
         params["limit"] = String(settings.limit)
         params["offset"]  = String(settings.offset)
+        if let category_filter = settings.categories {
+            params["category_filter"] = category_filter
+        }
         
         return params;
     }

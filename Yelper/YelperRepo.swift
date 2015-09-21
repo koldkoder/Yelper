@@ -12,7 +12,7 @@ class YelperRepo {
     var name: String?
     var imageUrl: NSURL?
     var ratingImageUrl: NSURL?
-    var reviewsCount: Int?
+    var reviewsCount: Int  = 0
     var address: String?
     var categories: [String]?
     
