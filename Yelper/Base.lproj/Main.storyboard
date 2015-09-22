@@ -151,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="G4S-zt-0Ed" customClass="YelperSwitchCell" customModule="Yelper" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwitchCell" id="G4S-zt-0Ed" customClass="YelperSwitchCell" customModule="Yelper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G4S-zt-0Ed" id="B4h-pS-LVw">
@@ -177,6 +177,28 @@
                                         <connections>
                                             <outlet property="onSwitch" destination="pT6-vU-Ye4" id="BQD-Yx-7Zm"/>
                                             <outlet property="switchLabel" destination="BZL-kL-KwE" id="uIp-1e-IgK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CheckMarkCell" rowHeight="90" id="uP6-eG-zbY" customClass="YelperCheckMarkCell" customModule="Yelper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="136" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uP6-eG-zbY" id="M8y-P1-6bu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="OptionName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-et-RDI">
+                                                    <rect key="frame" x="13" y="34" width="97" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uZj-et-RDI" firstAttribute="centerY" secondItem="M8y-P1-6bu" secondAttribute="centerY" id="lqK-yV-eIC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="OptionNameLabel" destination="uZj-et-RDI" id="TgG-fR-nU5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
