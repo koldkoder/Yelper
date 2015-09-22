@@ -77,7 +77,6 @@ class YelpClient: BDBOAuth1RequestOperationManager {
             params["deals_filter"] = String(dealsFilter)
         }
         
-        print(params)
         return params
     }
     

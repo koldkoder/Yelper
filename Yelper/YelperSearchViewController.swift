@@ -84,11 +84,15 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    private func doSearch() {
+    private func doSearch(append:Bool = false) {
         //MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         YelpClient().search(searchSettings, successCallback: { (repos:[YelperRepo]) -> Void in
-            self.repos = repos
+            if append {
+                self.repos.appendContentsOf(repos)
+            } else {
+                self.repos = repos
+            }
             self.tableView.reloadData()
             }, error: { (error) -> Void in
                 print(error)
@@ -144,4 +148,18 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
     }
 
 
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        let scrollPosition = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height - tableView.frame.height
+        if scrollPosition >= contentHeight {
+            fetchMoreData()
+        }
+    }
+    
+    func fetchMoreData() {
+        searchSettings.offset += 20
+        doSearch(true)
+        
+    }
 }
