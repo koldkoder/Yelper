@@ -29,6 +29,10 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.barTintColor = UIColor.redColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+
         categories = self.yelpCategories()
         sortOptions = self.yelpSortOptions()
         distanceOptions = self.yelpDistanceOptions()
