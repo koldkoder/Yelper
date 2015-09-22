@@ -20,6 +20,7 @@
 		2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */; };
 		2130E0FD1BAF9E230001290D /* YelperSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */; };
 		21F5942A1BAFACF800ED9096 /* YelperFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F594291BAFACF800ED9096 /* YelperFilterViewController.swift */; };
+		21F5942E1BB1107500ED9096 /* YelperCheckMarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F5942D1BB1107500ED9096 /* YelperCheckMarkCell.swift */; };
 		DEF503F9F2C03068E679C9BE /* libPods-Yelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160A2F16AFE47705E5EA3D3 /* libPods-Yelper.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperBusinessTableViewCell.swift; sourceTree = "<group>"; };
 		2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperSwitchCell.swift; sourceTree = "<group>"; };
 		21F594291BAFACF800ED9096 /* YelperFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperFilterViewController.swift; sourceTree = "<group>"; };
+		21F5942D1BB1107500ED9096 /* YelperCheckMarkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelperCheckMarkCell.swift; sourceTree = "<group>"; };
 		224CE45B7C0F3D5445941EC4 /* Pods-Yelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.release.xcconfig"; sourceTree = "<group>"; };
 		911931D0BD2F4B3B8E59A548 /* Pods-Yelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yelper/Pods-Yelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 		2130E0EC1BAE1DFC0001290D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				21F5942D1BB1107500ED9096 /* YelperCheckMarkCell.swift */,
 				2130E0FA1BAEC0B10001290D /* YelperBusinessTableViewCell.swift */,
 				2130E0FC1BAF9E230001290D /* YelperSwitchCell.swift */,
 			);
@@ -360,6 +363,7 @@
 				2130E0FD1BAF9E230001290D /* YelperSwitchCell.swift in Sources */,
 				2130E0FB1BAEC0B10001290D /* YelperBusinessTableViewCell.swift in Sources */,
 				2130E0BF1BAE1D470001290D /* AppDelegate.swift in Sources */,
+				21F5942E1BB1107500ED9096 /* YelperCheckMarkCell.swift in Sources */,
 				2130E0F11BAE1E690001290D /* YelperRepo.swift in Sources */,
 				2130E0F91BAE897B0001290D /* YelperClient.swift in Sources */,
 			);
