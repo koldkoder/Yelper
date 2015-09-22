@@ -31,7 +31,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         
     }
     
-    func search(settings: YelpSearchSettings,
+    func search(settings: YelperSearchSettings,
         successCallback: ([YelperRepo]) -> Void,
         error: (NSError? -> Void)?)  {
             let params = queryParamsWithSettings(settings)
@@ -52,7 +52,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
                 })
     }
     
-    func queryParamsWithSettings(settings: YelpSearchSettings) -> [String: String] {
+    func queryParamsWithSettings(settings: YelperSearchSettings) -> [String: String] {
         var params: [String:String] = [:];
         
         params["location"] = settings.location

@@ -12,7 +12,7 @@ import AFNetworking
 class YelperSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, YelperFilterViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    var searchSettings = YelpSearchSettings()
+    var searchSettings = YelperSearchSettings()
     var repos:[YelperRepo] = []
     var searchBar: UISearchBar!
     
@@ -28,9 +28,11 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
         navigationController?.navigationBar.barTintColor = UIColor.redColor()
         //navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         
-        searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 230, height: 30))
+        searchBar = UISearchBar()
+        searchBar.sizeToFit()
         searchBar.placeholder = "Search"
         searchBar.delegate = self
+        searchBar.resignFirstResponder()
         navigationItem.titleView = searchBar
         
         let useButton = UIButton(type: UIButtonType.Custom)
@@ -54,7 +56,7 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
         
         navigationItem.leftBarButtonItem = filterButton
         
-        doSearch(nil)
+        doSearch()
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,11 +64,28 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     
-    private func doSearch(searchTerm: String?) {
-        //MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        if let searchTerm = searchTerm {
-            searchSettings.searchString = searchTerm
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        let searchTerm = searchBar.text
+        view.endEditing(true)
+        if ((searchTerm?.isEmpty) != nil) {
+            searchSettings = YelperSearchSettings()
+            searchSettings.searchString = searchTerm!
+            doSearch()
         }
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText:String) {
+        if(searchText.isEmpty) {
+            view.endEditing(true)
+        }
+    }
+    
+    private func doSearch() {
+        //MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         YelpClient().search(searchSettings, successCallback: { (repos:[YelperRepo]) -> Void in
             self.repos = repos
@@ -103,7 +122,7 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func filterViewController(filterViewController: YelperFilterViewController, didUpdateFilters filters: [String : AnyObject]) {
-     
+        
         if let categories = filters["categories"] as? [String] {
             searchSettings.categories = categories.joinWithSeparator(",")
         }
@@ -120,7 +139,7 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
             searchSettings.deal = deal
         }
         
-        doSearch(nil)
+        doSearch()
         tableView.reloadData()
     }
 

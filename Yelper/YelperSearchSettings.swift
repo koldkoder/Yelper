@@ -10,7 +10,7 @@
 import Foundation
 
 
-class YelpSearchSettings {
+class YelperSearchSettings {
     var searchString = "All"
     var categories: String?
     var location = "San Jose"
