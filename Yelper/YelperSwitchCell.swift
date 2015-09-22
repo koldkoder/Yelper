@@ -31,7 +31,6 @@ class YelperSwitchCell: UITableViewCell {
     }
     
     func switchValueChanged() {
-        print("switch value changed")
         delegate?.switchCell?(self, didChangeValue: onSwitch.on)
     }
 
