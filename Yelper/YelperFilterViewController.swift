@@ -23,6 +23,8 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
     var sections = [String: AnyObject]()
     var switchStates = [Int:Bool]()
     var dealOn = false
+    var selectedDistance: Double?
+    var selectedSortBy: String?
     
 
     override func viewDidLoad() {
@@ -69,31 +71,30 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    /*func tableView(tableView: UITableView, accessoryTypeForRowWithIndexPath indexPath: NSIndexPath) -> UITableViewCellAccessoryType {
-        return UITableViewCellAccessoryType.None
-    }*/
-
-  
-    /*func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
-        if indexPath.section == 1 || indexPath.section == 2 {
-            let cell = filterTableView.cellForRowAtIndexPath(indexPath)
-            if(cell?.accessoryType == UITableViewCellAccessoryType.None) {
-                cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
-            }
-        }
-        return nil
-    }*/
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         let selectedSection = indexPath.section
         let selectedRow = indexPath.row
+        if selectedSection == 0 || selectedSection == 3 {
+            return
+        }
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             if cell.accessoryType == .Checkmark {
                 cell.accessoryType = .None
+                if(selectedSection == 1) {
+                    selectedDistance = nil
+                } else if (selectedSection == 2) {
+                    selectedSortBy = nil
+                }
             }
             else {
                 cell.accessoryType = .Checkmark
+                if(selectedSection == 1) {
+                    selectedDistance = distanceOptions[selectedRow]
+                } else if(selectedSection == 2) {
+                    selectedSortBy = sortOptions[selectedRow]["code"]
+                }
                 
                 //reset other rows of that section
                 for row in 0...filterTableView.numberOfRowsInSection(selectedSection)-1{
@@ -172,8 +173,6 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     
-    
-    
     @IBAction func onSearchButton(sender: AnyObject) {
          dismissViewControllerAnimated(true,completion: nil)
         var filters = [String: AnyObject]()
@@ -187,12 +186,23 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
             filters["categories"] = selectedCategories
         }
         
-         delegate?.filterViewController?(self, didUpdateFilters: filters)
+        if let selectedDistance = self.selectedDistance {
+            filters["distance"] = selectedDistance
+        }
+        
+        if let selectedSortBy = self.selectedSortBy {
+            filters["sortBy"] = selectedSortBy
+        }
+        
+        if self.dealOn {
+            filters["deal"] = true
+        }
+        print(filters)
+        delegate?.filterViewController?(self, didUpdateFilters: filters)
     }
     @IBAction func onCancelButton(sender: AnyObject) {
         dismissViewControllerAnimated(true,completion: nil)
     }
-    
     
     
     func yelpSortOptions() -> [[String:String]] {
@@ -377,14 +387,5 @@ class YelperFilterViewController: UIViewController, UITableViewDataSource, UITab
         ["name" : "Wraps", "code": "wraps"],
         ["name" : "Yugoslav", "code": "yugoslav"]];
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

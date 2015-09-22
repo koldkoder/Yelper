@@ -104,9 +104,22 @@ class YelperSearchViewController: UIViewController, UITableViewDataSource, UITab
     
     func filterViewController(filterViewController: YelperFilterViewController, didUpdateFilters filters: [String : AnyObject]) {
      
-        let categories = filters["categories"] as? [String]
-        let category_filter =  categories?.joinWithSeparator(",")
-        searchSettings.categories = category_filter
+        if let categories = filters["categories"] as? [String] {
+            searchSettings.categories = categories.joinWithSeparator(",")
+        }
+        
+        if let radiusFilter = filters["distance"] as? Double {
+            searchSettings.radiusFilter = radiusFilter
+        }
+        
+        if let sort = filters["sortBy"] as? String {
+            searchSettings.sort = sort
+        }
+        
+        if let deal = filters["deal"] as? Bool {
+            searchSettings.deal = deal
+        }
+        
         doSearch(nil)
         tableView.reloadData()
     }

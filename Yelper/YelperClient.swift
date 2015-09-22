@@ -56,16 +56,29 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         var params: [String:String] = [:];
         
         params["location"] = settings.location
-        if let searchString = settings.searchString {
-            params["term"] = searchString
-        }
+       
+        params["term"] = settings.searchString
+        
         params["limit"] = String(settings.limit)
+        
         params["offset"]  = String(settings.offset)
-        if let category_filter = settings.categories {
-            params["category_filter"] = category_filter
+        
+        params["sort"] = settings.sort
+        
+        if let categoryFilter = settings.categories {
+            params["category_filter"] = categoryFilter
         }
         
-        return params;
+        if let radiusFilter = settings.radiusFilter {
+            params["radius_filter"] = String(radiusFilter)
+        }
+        
+        if let dealsFilter = settings.deal {
+            params["deals_filter"] = String(dealsFilter)
+        }
+        
+        print(params)
+        return params
     }
     
 }
